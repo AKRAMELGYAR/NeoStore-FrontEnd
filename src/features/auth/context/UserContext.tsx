@@ -1,0 +1,21 @@
+import { createContext, useState } from "react";
+
+
+export const UserContext = createContext<any>(null);
+
+export default function UserProvider({ children }: { children: React.ReactNode }) {
+  const [token, setToken] = useState(localStorage.getItem('token'));
+
+  function logOut(){
+    setToken(null);
+    localStorage.removeItem('token');
+  }
+
+  return <>
+    <UserContext.Provider value={{ token, setToken , logOut }}>
+      {children}
+    </UserContext.Provider>
+  </>
+
+}
+

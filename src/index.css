@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-100: #e7f7e7;
+  --color-primary-200: #ceefce;
+  --color-primary-300: #b6e6b6;
+  --color-primary-400: #9de99d;
+  --color-primary-500: #84ed84;
+  --color-primary-600: #6ccf6c;
+  --color-primary-700: #54c654;
+  --color-primary-800: #3bbd3b;
+  --color-primary-900: #23b523;
+  --color-primary-950: #0aad0a;
+  /* --container-2xl: 1320px; */
+
+  --breakpoint-2xl: 1320px;  
+}
+
+body {
+  font-family: 'Encode Sans Expanded', sans-serif;
+}

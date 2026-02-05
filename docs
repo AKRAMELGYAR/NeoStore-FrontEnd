@@ -1,0 +1,53 @@
+read the front end code to make the frontend of this suitable to the rest design of the project and make it responsive
+
+Proposed Changess
+Project Setup
+Install dependencies: redux-toolkit, react-redux
+State Management (Redux)
+[NEW] 
+
+store.ts
+Configure Redux store.
+[NEW] 
+
+cartSlice.ts
+State: items, totalAmount, loading, error.
+Thunks:
+fetchCart: GET /cart/:cartId
+
+addToCart
+: POST /cart/add
+
+removeFromCart
+: PATCH /cart/remove
+updateCartQuantity: PATCH /cart/update
+API Integration
+[NEW] 
+
+api.ts
+Axios instance configuration.
+Base URL: http://localhost:3000.
+[NEW] 
+
+cartService.ts
+API call functions matching the controller endpoints.
+UI Components
+[NEW] 
+
+CartPage.tsx
+Main layout.
+Fetches cart on mount.
+Displays CartItem list or "Cart is empty" state.
+Displays CartSummary.
+[NEW] 
+
+CartItem.tsx
+Displays product info (image, name, price).
+Quantity controls (+/-).
+Remove button.
+[NEW] 
+
+CartSummary.tsx
+Shows Subtotal and Total.
+Checkout button.
+
