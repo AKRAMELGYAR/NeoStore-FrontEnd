@@ -1,73 +1,86 @@
-# React + TypeScript + Vite
+# NeoStore – AI-Powered E-Commerce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance E-Commerce Frontend Application built with React, TypeScript, and Tailwind CSS, designed to deliver a smooth shopping experience and seamlessly integrate with an AI-powered backend
+---
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🎨 ** UI & UX**
 
-## React Compiler
+* Clean, modern, and responsive design.
+* Fully mobile-friendly layout.
+* Smooth navigation and transitions.
+* Reusable and scalable component architecture.
+### 🤖 **AI Smart Assistant**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Interactive smart assistant integrated into the UI.
 
-## Expanding the ESLint configuration
+*Helps users:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Discover suitable products.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Get recommendations.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+**Navigate the store easily.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*Real-time interaction with AI backend services.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🔐 **Authentication & Authorization**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+*Login & Register flows.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*OTP verification UI.
+
+*JWT-based authentication handling.
+
+*Protected routes.
+
+*Role-based UI rendering (Admin / User).
+
+### 🔍 **Advanced Search & Filtering**
+
+* Filter products by:
+
+* Category & Sub-category
+
+* Brand
+
+* Price range
+
+* Optimized UI filters synced with backend queries.
+
+* Search with debounce for better performance.
+
+### ✅ **Order & Payment System**
+
+* Full order lifecycle (create, update, complete).
+* Inventory/stock auto-update on each order.
+* Cart cleanup after successful checkout.
+* **Stripe integration** with checkout session + webhook handling.
+
+
+### ⚡ **Performance & Best Practices**
+
+* Optimized API calls using React Query.
+
+* Centralized API service layer.
+
+* Clean state management.
+
+
+
+### ✅ **DevOps Ready**
+
+* Environment-based configuration.
+* Ready for cloud deployment.
+
+---
+
+
+
+## 👤 Author
+
+**Akram Elgyar**
+
+* GitHub: [AKRAMELGYAR](https://github.com/AKRAMELGYAR)
+* Full-Stack Engineer/Backend Engineer – Node.js · NestJS · TypeScript . React.js
