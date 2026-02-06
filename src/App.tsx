@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createHashRouter, RouterProvider } from "react-router-dom"
 
 import Home from "./features/home/pages/Home/Home"
 import Login from "./features/auth/pages/LogIn/Login"
@@ -18,7 +18,7 @@ import Orders from "./features/orders/pages/orders/orders"
 
 function App() {
 
-  const routes = createBrowserRouter([
+  const routes = createHashRouter([
     {
       path: "/", element:
         <ProtectedRoutes>
