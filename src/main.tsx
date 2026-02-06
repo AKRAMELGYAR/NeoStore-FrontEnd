@@ -7,6 +7,7 @@ import './index.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import '@fontsource/encode-sans-expanded/index.css'
 import App from './App.tsx'
+import { HashRouter } from 'react-router-dom'
 
 const queryClient = new QueryClient()
 
@@ -14,7 +15,9 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
-        <App />
+        <HashRouter>
+          <App />
+        </HashRouter>
       </QueryClientProvider>
     </Provider>
   </StrictMode>,
